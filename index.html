@@ -5,161 +5,199 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignment-6</title>
+    <title>Assignment-7</title>
+
+    <style>
+        .container {
+            border: 2px solid white;
+            margin-top: -30px;
+            padding: 10px;
+            margin-left: -20px;
+        }
+        
+        .header {
+            width: 60vh;
+            background: grey;
+            line-height: 40px;
+            margin-left: 480px;
+        }
+        
+        .banner {
+            width: 60vh;
+            background: lightblue;
+            line-height: 210px;
+            margin-left: 480px;
+            margin-top: -13px;
+        }
+        
+        .circle1 {
+            width: 80px;
+            height: 80px;
+            border-radius: 160px;
+            background-color: goldenrod;
+            display: inline-flex;
+            margin-left: 490px;
+        }
+        
+        .circle2 {
+            width: 80px;
+            height: 80px;
+            border-radius: 160px;
+            background-color: goldenrod;
+            display: inline-flex;
+            margin-left: 30px;
+        }
+        
+        .circle3 {
+            width: 80px;
+            height: 80px;
+            border-radius: 160px;
+            background-color: goldenrod;
+            display: inline-flex;
+            margin-left: 30px;
+        }
+        
+        .circle4 {
+            width: 80px;
+            height: 80px;
+            border-radius: 160px;
+            background-color: goldenrod;
+            display: inline-flex;
+            margin-left: 30px;
+        }
+        
+        .left {
+            width: 250px;
+            background-color: grey;
+            line-height: 200px;
+            margin-left: 480px;
+            float: left;
+        }
+        
+        .artificial1 {
+            width: 26vh;
+            background-color: chocolate;
+            display: inline-block;
+            margin-left: 10px;
+            margin-right: 200px;
+            margin-bottom: 38px;
+            line-height: 35px;
+        }
+        
+        .artificial2 {
+            width: 26vh;
+            background-color: chocolate;
+            display: inline-block;
+            margin-left: 10px;
+            margin-right: 350px;
+            margin-bottom: 38px;
+            margin-top: -30px;
+            line-height: 35px;
+        }
+        
+        .artificial3 {
+            width: 26vh;
+            background-color: chocolate;
+            display: inline-block;
+            margin-left: 10px;
+            margin-top: -60px;
+            line-height: 35px;
+        }
+        
+        .box1 {
+            width: 14vh;
+            height: 130px;
+            background-color: orangered;
+            display: inline-flex;
+            margin-left: 480px;
+        }
+        
+        .box2 {
+            width: 14vh;
+            height: 130px;
+            background-color: orangered;
+            display: inline-flex;
+            margin-left: 5px;
+        }
+        
+        .box3 {
+            width: 14vh;
+            height: 130px;
+            background-color: orangered;
+            display: inline-flex;
+            margin-left: 5px;
+        }
+        
+        .box4 {
+            width: 14vh;
+            height: 130px;
+            background-color: orangered;
+            display: inline-flex;
+            margin-left: 5px;
+        }
+        
+        .container::after {
+            content: ' ';
+            display: block;
+            clear: both;
+        }
+        
+        .footer {
+            width: 60vh;
+            height: 40px;
+            background-color: palevioletred;
+            line-height: 40px;
+            margin-left: 477px;
+        }
+    </style>
+
+
 </head>
-<style>
-    * {
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-    }
-    
-    .container {
-        display: inline-flex;
-    }
-    
-    .parts {
-        width: 300px;
-        height: 430px;
-        overflow: hidden;
-        border: 4px solid white;
-        margin-bottom: 10px;
-        text-align: justify;
-        padding: 10px;
-        margin-left: 50px;
-        border-radius: 10px;
-        background-color: white;
-    }
-    
-    #firstpart {
-        width: 300px;
-        height: 430px;
-        border: 2px solid white;
-        margin-bottom: 10px;
-        text-align: justify;
-        padding: 10px;
-        background-color: white;
-    }
-    
-    #secondpart {
-        width: 300px;
-        height: 430px;
-        border: 2px solid white;
-        margin-bottom: 10px;
-        text-align: justify;
-        overflow: hidden;
-        padding: 10px;
-        background-color: white;
-    }
-    
-    #thirdpart {
-        width: 300px;
-        height: 430px;
-        border: 2px solid white;
-        margin-bottom: 10px;
-        text-align: justify;
-        overflow: hidden;
-        padding: 10px;
-        background-color: white;
-    }
-    
-    #fourthpart {
-        width: 300px;
-        height: 430px;
-        border: 2px solid white;
-        margin-bottom: 10px;
-        text-align: justify;
-        overflow: hidden;
-        padding: 10px;
-        background-color: white;
-    }
-    
-    .parts img {
-        width: 280px;
-        height: 150px;
-        padding: 5px;
-        border-radius: 20px;
-    }
-    
-    .mybutton {
-        display: block;
-        margin-top: 10px;
-        text-decoration: none;
-        color: white;
-        font-family: arial;
-        background-color: red;
-        padding: 10px 40px;
-        border-radius: 10px;
-    }
-    
-    .mybutton:hover {
-        background-color: blue;
-    }
-</style>
 
 
-<body style="background:lightgrey"><br>
-    <div style="display:flex;justify-content:center">
-        <figure style="border:9px solid white;display:inline-block;background:rgba(0, 0, 0, 0.658);padding:15px ">
-            <font size=" 4 ">
-                <h1 style="text-align:center;color:white;font-family:arial;"><u>PRACTICAL-6:</u> <u> CREATE FOLLOWING LAYOUT USING CSS LAYOUT PROPERTIES </u></h1>
-            </font>
-
-        </figure>
-    </div><br><br><br>
-    <div class="container ">
-        <div class="parts " id="firstpart ">
-            <div class="image-heading ">
-                <img src="./Assignment-5/logo/html logo intro.png" />
+<body>
+    <div class="container">
+        <div class="header">
+            <h3 style="text-align: center; font-family:arial;color:white">Header</h3>
+        </div>
+        <div class="banner">
+            <h3 style="text-align: center; font-family:arial;color:white">Banner</h3>
+        </div>
+        <h3 style="text-align: center;">Section-1</h3>
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+        <div class="circle3"></div>
+        <div class="circle4"></div>
+        <h3 style="text-align: center;">Section2</h3>
+        <div class="content">
+            <div class="left">
+                <h3 style="text-align: center; font-family:arial;color:white">Main Content</h3>
             </div>
-            <h3 style="text-align: center;font-family: 'arial' "><u>Introduction to HTML</u></h3><br>
-            <p style="font-family: 'Times New Roman' "> HTML stands for HyperText Markup Language. It is used to design web pages using a markup language. HTML is the combination of Hypertext and Markup language. Hypertext defines the link between the web pages. A markup language is used to define
-                the text document within tag which defines the structure of web pages. </p>
-            <div class="image " style="text-align: center; ">
-
-                <a href="./Assignment-6/introabouthtml.html " class="mybutton " target="_blank">Read More</a>
+            <div class="right">
+                <div class="artificial1">
+                    <h3 style="text-align: center; font-family:arial;color:white">Artificial-1</h3>
+                </div>
+                <div class="artificial2">
+                    <h3 style="text-align: center; font-family:arial;color:white">Artificial-2</h3>
+                </div>
+                <div class="artificial3">
+                    <h3 style="text-align: center; font-family:arial;color:white">Artificial-3</h3>
+                </div>
             </div>
         </div>
-
-
-        <div class="parts " id="secondpart ">
-            <div class="image-heading ">
-                <img src="./Assignment-6/img css.webp" />
-            </div>
-            <h3 style="text-align: center;font-family: 'arial' "><u>Introduction to CSS</u></h3><br>
-            <p style="font-family: 'Times New Roman' "> CSS stands for Cascading Style Sheets. CSS describes how HTML elements are to be displayed on screen, paper, or in other media CSS saves a lot of work. It can control the layout of multiple web pages all at once. External stylesheets are stored
-                in CSS files.CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript. </p>
-            <div class="image " style="text-align: center; ">
-                <a href="./Assignment-6/introaboutcss.html " class="mybutton " target="_blank">Read More</a>
-            </div>
+        <h3 style="text-align: center;">Section3</h3>
+        <div class="content">
+            <div class="box1"></div>
+            <div class="box2"></div>
+            <div class="box3"></div>
+            <div class="box4"></div>
         </div>
+        <h3 style="text-align: center;">Section4</h3>
+        <div class="footer">
 
-        <div class="parts " id="thirdpart ">
-            <div class="image-heading ">
-                <img src="./Assignment-6/jquery.jpg " />
-            </div>
-            <h3 style="text-align: center; "><u>Introduction to JQUERY</u></h3><br>
-            <p style="font-family: 'Times New Roman' ">jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers.
-                With a combination of versatility and extensibility. </p><br>
-            <div class="image " style="text-align: center; ">
-                <a href="./Assignment-6/introaboutjquery.html " class="mybutton " target="_blank">Read More</a>
-            </div>
+            <h3 style="text-align: center; font-family:arial;color:white">Footer</h3>
         </div>
-
-
-        <div class="parts " id="fourthpart ">
-            <div class="image-heading ">
-                <img src="./Assignment-6/bootstrap-illustration.png " />
-            </div>
-            <h3 style="text-align: center; "><u>Introduction to BOOTSTRAP</u></h3><br>
-            <p style="font-family: 'Times New Roman' "> Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development. It contains CSS- and JavaScript-based design templates for typography, forms, buttons, navigation, and other interface components.It
-                also gives you support for JavaScript plugins.</p>
-            <div class="image " style="text-align: center; "><br>
-                <a href="./Assignment-6/introaboutbootstrap.html " class="mybutton " target="_blank">Read More</a>
-            </div>
-        </div>
-
-
+    </div>
 </body>
 
 </html>
