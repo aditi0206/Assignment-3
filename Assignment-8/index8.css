@@ -1,0 +1,236 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: rgb(50, 50, 50);
+    text-align: center;
+}
+
+.header ul {
+    list-style: none;
+    display: inline-flex;
+    height: 90px;
+}
+
+.header ul li {
+    width: 260px;
+    height: 85px;
+    padding: 25px;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.header ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-family: arial;
+}
+
+.header ul li:hover {
+    background-color: goldenrod;
+}
+
+.fa {
+    margin-right: 5px;
+}
+
+.banner {
+    background-image: url("./everything-you-must-know-to-become-a-successful-programmer-in-2021.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin-top: -20px;
+}
+
+.circle1 {
+    width: 200px;
+    height: 200px;
+    border-radius: 160px;
+    background-color: goldenrod;
+    display: inline-flex;
+    margin-left: 200px;
+    background-image: url("./a.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.circle2 {
+    width: 200px;
+    height: 200px;
+    border-radius: 160px;
+    background-color: goldenrod;
+    display: inline-flex;
+    margin-left: 100px;
+    background-image: url("./b.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.circle3 {
+    width: 200px;
+    height: 200px;
+    border-radius: 160px;
+    background-color: goldenrod;
+    display: inline-flex;
+    margin-left: 100px;
+    background-image: url("./3rd.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.circle4 {
+    width: 200px;
+    height: 200px;
+    border-radius: 160px;
+    background-color: goldenrod;
+    display: inline-flex;
+    margin-left: 100px;
+    background-image: url("./to+the+future+man+marty+marty+mcfly+mcfly+people+person+icon-1320085992404035772.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.left {
+    width: 700px;
+    background-color: grey;
+    height: 380px;
+    float: left;
+    display: inline-flex;
+}
+
+.a1 {
+    width: 800px;
+    background-color: chocolate;
+    display: inline-block;
+    margin-left: 10px;
+    margin-bottom: 38px;
+    line-height: 100px;
+    background-image: url("./1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.a2 {
+    width: 800px;
+    background-color: chocolate;
+    display: inline-block;
+    margin-left: 10px;
+    margin-bottom: 38px;
+    line-height: 100px;
+    background-image: url("./2.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.a3 {
+    width: 800px;
+    background-color: chocolate;
+    display: inline-block;
+    margin-left: 10px;
+    margin-bottom: 38px;
+    line-height: 100px;
+    background-image: url("./3.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container1 {
+    display: inline-flex;
+}
+
+.parts {
+    width: 300px;
+    height: 430px;
+    overflow: hidden;
+    border: 4px solid white;
+    margin-bottom: 10px;
+    text-align: justify;
+    padding: 10px;
+    margin-left: 50px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+#firstpart {
+    width: 300px;
+    height: 430px;
+    border: 2px solid black;
+    margin-bottom: 10px;
+    text-align: justify;
+    padding: 10px;
+    background-color: white;
+}
+
+#secondpart {
+    width: 300px;
+    height: 430px;
+    border: 2px solid black;
+    margin-bottom: 10px;
+    text-align: justify;
+    overflow: hidden;
+    padding: 10px;
+    background-color: white;
+}
+
+#thirdpart {
+    width: 300px;
+    height: 430px;
+    border: 2px solid white;
+    margin-bottom: 10px;
+    text-align: justify;
+    overflow: hidden;
+    padding: 10px;
+    background-color: white;
+}
+
+#fourthpart {
+    width: 300px;
+    height: 430px;
+    border: 2px solid white;
+    margin-bottom: 10px;
+    text-align: justify;
+    overflow: hidden;
+    padding: 10px;
+    background-color: white;
+}
+
+.parts img {
+    width: 280px;
+    height: 150px;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.mybutton {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: white;
+    font-family: arial;
+    background-color: red;
+    padding: 10px 40px;
+    border-radius: 10px;
+}
+
+.mybutton:hover {
+    background-color: blue;
+}
+
+.footer {
+    width: 100%;
+    height: 140px;
+    background-color: lightcoral;
+    line-height: 70px;
+}
