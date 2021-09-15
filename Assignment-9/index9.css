@@ -4,38 +4,49 @@
     box-sizing: border-box;
 }
 
+.container {
+    width: 100%;
+}
+
 .header {
-    background-color: rgb(50, 50, 50);
-    text-align: center;
+    width: 100%;
+    background-color: grey;
+    height: 70px;
+    margin: auto;
+    padding: 0 20px;
 }
 
-.header ul {
-    list-style: none;
-    display: inline-flex;
-    height: 90px;
-}
-
-.header ul li {
-    width: 260px;
-    height: 85px;
-    padding: 25px;
-    font-size: 20px;
-    line-height: 40px;
-}
-
-.header ul li a {
-    text-decoration: none;
+.header h2 {
+    float: left;
+    line-height: 70px;
+    font-family: arial;
     text-transform: uppercase;
     color: white;
+}
+
+.header .menu {
+    list-style: none;
+    float: right;
+}
+
+.menu li {
+    list-style: none;
+    display: inline-block;
+    line-height: 70px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: white;
     font-family: arial;
+    text-transform: uppercase;
+    color: white;
+    padding: 0px 20px;
+    font-size: 20px;
 }
 
-.header ul li:hover {
-    background-color: goldenrod;
-}
-
-.fa {
-    margin-right: 5px;
+.menu li a:hover {
+    background-color: orange;
 }
 
 .banner {
@@ -44,7 +55,6 @@
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
-    margin-top: -20px;
 }
 
 .circle1 {
@@ -255,43 +265,217 @@
     visibility: hidden;
 }
 
-
-/* @media(max-width:px) { */
-
-.show-btn,
-.hide-btn {
-    display: block;
+@media(max-width:900px) {
+    .show-btn,
+    .hide-btn {
+        display: block;
+    }
+    .menu {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        right: -100%;
+        line-height: normal;
+        text-align: center;
+        padding: 80px 0;
+        background-color: grey;
+        transition: 1s;
+    }
+    #check:checked~.menu {
+        right: 0;
+    }
+    .menu li {
+        display: block;
+        /* padding: 20px 0; */
+    }
+    .menu li a {
+        display: block;
+        font-size: 22px;
+    }
+    .hide-btn {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
 }
 
-.header {
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    top: 0;
-    right: -100%;
-    line-height: normal;
-    text-align: center;
-    padding: 80px 0;
-    background-color: grey;
-    transition: 1s;
-}
-
-#check:checked~.header {
-    right: 0;
-}
-
-.header li {
-    display: block;
-    /* padding: 20px 0; */
-}
-
-.header li a {
-    display: block;
-    font-size: 22px;
-}
-
-.hide-btn {
-    position: absolute;
-    top: 20px;
-    right: 20px;
+@media (max-width: 800px) {
+    .header {
+        width: 100%;
+        background-color: grey;
+        position: fixed;
+        top: 0;
+        height: 70px;
+    }
+    .show-btn {
+        display: block;
+    }
+    .menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        background-color: #333;
+        text-align: center;
+        padding: 80px 0px;
+        line-height: normal;
+        transition: 0.7s;
+    }
+    .menu li {
+        display: block;
+    }
+    .manu li a {
+        display: block;
+    }
+    #check:checked~.menu {
+        right: 0;
+    }
+    .hide-btn {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 10px;
+    }
+    .banner {
+        width: 100%;
+        height: 350px;
+        margin-bottom: 15px;
+        display: flex;
+        font-size: 30px;
+        color: white;
+        margin-top: 90px;
+    }
+    .banner h2 {
+        margin: 10px 20px;
+        color: #fff;
+    }
+    .circle1 {
+        width: 90px;
+        height: 90px;
+    }
+    .circle2 {
+        width: 90px;
+        height: 90px;
+    }
+    .circle3 {
+        width: 90px;
+        height: 90px;
+        display: block;
+        margin-left: 80px;
+    }
+    .circle4 {
+        width: 90px;
+        height: 90px;
+        display: inline-block;
+    }
+    #circle-container::after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+    .circle img {
+        height: 250px;
+        width: 250px;
+        border-radius: 50%;
+        float: left;
+        margin-left: 10%;
+        margin-bottom: 20px;
+    }
+    #left-side {
+        width: 100%;
+        height: 200px;
+        background-color: gray;
+        color: #fff;
+        margin-bottom: 20px;
+    }
+    #left-p>h2 {
+        text-align: left;
+        margin: 5px 5px;
+    }
+    #left-p>p {
+        font-size: 20px;
+        padding: 10px;
+        text-align: justify;
+        line-height: 28px;
+    }
+    #right-side {
+        width: 100%;
+        height: 400px;
+    }
+    .artical {
+        height: 31%;
+        margin-bottom: 20px;
+        background-color: chocolate;
+        display: flex;
+        justify-content: center;
+        font-size: 16px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: black;
+        overflow: hidden;
+    }
+    #p1 {
+        background-image: url(https://imgur.com/JyMz0CR.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #p2 {
+        background-image: url(https://imgur.com/GFLWoXM.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #p3 {
+        background-image: url(https://imgur.com/uzmZqZA.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #grid-container {
+        width: 100%;
+        margin: 15px auto;
+    }
+    #grid-container::after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+    .grid {
+        width: 40%;
+        float: left;
+        margin-left: 50px;
+        background-color: lightgrey;
+        border-radius: 8px;
+        margin-bottom: 20px;
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
+    }
+    .grid>img {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .grid>h4 {
+        margin: 0px 10px;
+        text-align: center;
+    }
+    .grid>p {
+        margin: 10px;
+        font-size: 15px;
+        text-align: justify;
+        line-height: 25px;
+        color: white;
+    }
+    .grid>a {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        color: #fff;
+        background-color: red;
+        text-decoration: none;
+        padding: 10px;
+        border-radius: 8px;
+    }
+    h1 {
+        color: black;
+        font-size: 40px;
+        text-align: center;
+        padding: 25px 0px;
+    }
 }
