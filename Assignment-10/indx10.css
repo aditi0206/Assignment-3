@@ -16,13 +16,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: white;
 }
 
 .header img {
-    width: 70px;
-    height: 60px;
+    width: 60px;
+    height: 50px;
     /* margin-right: auto; */
-    margin-right: 10px;
+    margin-right: 15px;
 }
 
 .header h1 {
