@@ -2,156 +2,165 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.container {
+#container {
     width: 100%;
-}
-
-.header {
-    width: 100%;
-    background-color: grey;
-    height: 70px;
+    max-width: 1200px;
     margin: auto;
+}
+
+#header {
+    background-color: grey;
+    width: 100%;
+    height: 70px;
+    max-width: 1200px;
+    position: fixed;
+    top: 0;
+    height: 70px;
+}
+
+.menu {
+    list-style: none;
+    float: right;
     padding: 0 20px;
 }
 
-.header h2 {
-    float: left;
-    line-height: 70px;
-    font-family: arial;
-    text-transform: uppercase;
-    color: white;
-}
-
-.header .menu {
-    list-style: none;
-    float: right;
-}
-
 .menu li {
-    list-style: none;
     display: inline-block;
     line-height: 70px;
 }
 
 .menu li a {
+    transition: 0.4s;
+    display: block;
     text-decoration: none;
-    color: white;
-    font-family: arial;
-    text-transform: uppercase;
     color: white;
     padding: 0px 20px;
     font-size: 20px;
+    text-transform: uppercase;
 }
 
 .menu li a:hover {
-    background-color: orange;
+    color: black;
+    background-color: white;
 }
 
-.banner {
+.show-btn,
+.hide-btn,
+#chk {
+    font-size: 30px;
+    line-height: 70px;
+    color: white;
+    display: none;
+    float: right;
+    padding-right: 20px;
+}
+
+#banner {
+    width: 100%;
+    margin-top: 90px;
+    height: 680px;
+    margin-bottom: 15px;
+    display: flex;
+    font-size: 40px;
+    color: white;
+}
+
+#banner {
     background-image: url("./everything-you-must-know-to-become-a-successful-programmer-in-2021.jpg");
-    background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
+    background-position: center;
 }
 
-.circle1 {
-    width: 200px;
-    height: 200px;
-    border-radius: 160px;
+#banner h2 {
+    margin: 20px 20px;
+    color: #fff;
+}
+
+#circle {
+    width: 100%;
+    margin: 15px auto;
+}
+
+#circle::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.circle img {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
     background-color: goldenrod;
-    display: inline-flex;
-    margin-left: 200px;
-    background-image: url("./a.png");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.circle2 {
-    width: 200px;
-    height: 200px;
-    border-radius: 160px;
-    background-color: goldenrod;
-    display: inline-flex;
-    margin-left: 100px;
-    background-image: url("./b.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.circle3 {
-    width: 200px;
-    height: 200px;
-    border-radius: 160px;
-    background-color: goldenrod;
-    display: inline-flex;
-    margin-left: 100px;
-    background-image: url("./3rd.png");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.circle4 {
-    width: 200px;
-    height: 200px;
-    border-radius: 160px;
-    background-color: goldenrod;
-    display: inline-flex;
-    margin-left: 100px;
-    background-image: url("./to+the+future+man+marty+marty+mcfly+mcfly+people+person+icon-1320085992404035772.png");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.left {
-    width: 700px;
-    background-color: grey;
-    height: 380px;
     float: left;
-    display: inline-flex;
+    margin-left: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
 }
 
-.a1 {
-    width: 800px;
+#sec2-container::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+#left-side {
+    width: 50%;
+    height: 550px;
+    background-color: gray;
+    float: left;
+    color: #fff;
+}
+
+#left-p>h2 {
+    text-align: left;
+    margin: 10px 5px;
+}
+
+#left-p>p {
+    font-size: 20px;
+    padding: 10px;
+    text-align: justify;
+    line-height: 28px;
+}
+
+#right-side {
+    width: 48%;
+    height: 550px;
+    float: right;
+}
+
+.article {
+    height: 31%;
+    margin-bottom: 20px;
     background-color: chocolate;
-    display: inline-block;
-    margin-left: 10px;
-    margin-bottom: 38px;
-    line-height: 100px;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    overflow: hidden;
+}
+
+#project1 {
     background-image: url("./1.jpg");
-    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-.a2 {
-    width: 800px;
-    background-color: chocolate;
-    display: inline-block;
-    margin-left: 10px;
-    margin-bottom: 38px;
-    line-height: 100px;
+#project2 {
     background-image: url("./2.jpeg");
-    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-.a3 {
-    width: 800px;
-    background-color: chocolate;
-    display: inline-block;
-    margin-left: 10px;
-    margin-bottom: 38px;
-    line-height: 100px;
+#project3 {
     background-image: url("./3.jpg");
-    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -168,7 +177,6 @@
     margin-bottom: 10px;
     text-align: justify;
     padding: 10px;
-    margin-left: 50px;
     border-radius: 10px;
     background-color: white;
 }
@@ -238,70 +246,255 @@
     background-color: blue;
 }
 
-.footer {
-    width: 100%;
-    height: 140px;
-    background-color: lightcoral;
-    line-height: 70px;
+
+/* -------Footer Section ------- */
+
+#footer {
+    background-color: plum;
+    height: 100px;
 }
 
-.show-btn:hover,
-.hide-btn:hover {
-    color: white;
-    font-size: 30px;
+#footer>p {
+    font-size: 16px;
+    color: black;
+    text-align: center;
+    padding: 20px;
 }
 
-.show-btn {
-    float: right;
-    line-height: 70px;
-}
 
-.hide-btn {
-    display: none;
-}
+/* 1. First Break-point */
 
-#check {
-    position: absolute;
-    visibility: hidden;
-}
 
-@media(max-width:900px) {
-    .show-btn,
-    .hide-btn {
-        display: block;
-    }
+/* 801px - 1199px */
+
+@media (min-width: 801px) and (max-width: 1199px) {
     .menu {
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        top: 0;
-        right: -100%;
-        line-height: normal;
-        text-align: center;
-        padding: 80px 0;
-        background-color: grey;
-        transition: 1s;
-    }
-    #check:checked~.menu {
-        right: 0;
+        list-style: none;
+        float: right;
     }
     .menu li {
-        display: block;
-        /* padding: 20px 0; */
+        line-height: 70px;
+        display: inline-block;
     }
     .menu li a {
         display: block;
-        font-size: 22px;
+        text-decoration: none;
+        color: white;
+        padding: 0px 20px;
+        font-size: 20px;
+        text-transform: uppercase;
     }
-    .hide-btn {
-        position: absolute;
-        top: 20px;
-        right: 20px;
+    .menu li a:hover {
+        color: black;
+        background-color: white;
+    }
+    html {
+        scroll-padding-top: 70px;
+        scroll-behavior: smooth;
+    }
+    #container {
+        width: 100%;
+    }
+    .show-btn,
+    .hide-btn,
+    #chk {
+        font-size: 30px;
+        line-height: 70px;
+        color: white;
+        display: none;
+        float: right;
+        padding-right: 20px;
+    }
+    /* ------Header Container-------- */
+    #header {
+        width: 100%;
+        background-color: grey;
+        position: fixed;
+        top: 0;
+        height: 70px;
+    }
+    /* ------------------Banner ------------- */
+    #banner {
+        width: 100%;
+        margin-top: 90px;
+        height: 680px;
+        margin-bottom: 15px;
+        display: flex;
+        font-size: 40px;
+        color: white;
+    }
+    #banner {
+        background-image: url("./everything-you-must-know-to-become-a-successful-programmer-in-2021.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+    #banner h2 {
+        margin: 20px 20px;
+        color: #fff;
+    }
+    /* ------- Team Members ----- */
+    #circle-container {
+        width: 100%;
+    }
+    #circle-container::after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+    .circle img {
+        height: 250px;
+        width: 250px;
+        border-radius: 50%;
+        background-color: goldenrod;
+        float: left;
+        margin-left: 15%;
+        margin-bottom: 20px;
+    }
+    /* -------------About Us-------------- */
+    #sec2-container::after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+    #left-side {
+        width: 50%;
+        height: 550px;
+        background-color: gray;
+        float: left;
+        color: #fff;
+    }
+    #left-p>h2 {
+        text-align: left;
+        margin: 10px 5px;
+    }
+    #left-p>p {
+        font-size: 20px;
+        padding: 10px;
+        text-align: justify;
+        line-height: 28px;
+    }
+    #right-side {
+        width: 48%;
+        height: 550px;
+        float: right;
+    }
+    .artical {
+        height: 31%;
+        margin-bottom: 20px;
+        background-color: chocolate;
+        display: flex;
+        justify-content: center;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: black;
+        overflow: hidden;
+    }
+    #project1 {
+        background-image: url("./1.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #project2 {
+        background-image: url("./2.jpeg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #project3 {
+        background-image: url("./3.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    /* --------- Technologies Used------------ */
+    .container1 {
+        display: inline-flex;
+    }
+    .parts {
+        width: 300px;
+        height: 430px;
+        overflow: hidden;
+        border: 4px solid white;
+        margin-bottom: 10px;
+        text-align: justify;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: white;
+    }
+    #firstpart {
+        width: 300px;
+        height: 430px;
+        border: 2px solid black;
+        margin-bottom: 10px;
+        text-align: justify;
+        padding: 10px;
+        background-color: white;
+    }
+    #secondpart {
+        width: 300px;
+        height: 430px;
+        border: 2px solid black;
+        margin-bottom: 10px;
+        text-align: justify;
+        overflow: hidden;
+        padding: 10px;
+        background-color: white;
+    }
+    #thirdpart {
+        width: 300px;
+        height: 430px;
+        border: 2px solid white;
+        margin-bottom: 10px;
+        text-align: justify;
+        overflow: hidden;
+        padding: 10px;
+        background-color: white;
+    }
+    #fourthpart {
+        width: 300px;
+        height: 430px;
+        border: 2px solid white;
+        margin-bottom: 10px;
+        text-align: justify;
+        overflow: hidden;
+        padding: 10px;
+        background-color: white;
+    }
+    .parts img {
+        width: 280px;
+        height: 150px;
+        padding: 5px;
+        border-radius: 20px;
+    }
+    .mybutton {
+        display: block;
+        margin-top: 10px;
+        text-decoration: none;
+        color: white;
+        font-family: arial;
+        background-color: red;
+        padding: 10px 40px;
+        border-radius: 10px;
+    }
+    .mybutton:hover {
+        background-color: blue;
+    }
+    /* -------Footer Section ------- */
+    #footer {
+        background-color: plum;
+        height: 100px;
+    }
+    #footer>p {
+        font-size: 16px;
+        color: black;
+        text-align: center;
+        padding: 20px;
     }
 }
 
+
+/* 2. Second Break-point */
+
 @media (max-width: 800px) {
-    .header {
+    #header {
         width: 100%;
         background-color: grey;
         position: fixed;
@@ -328,7 +521,7 @@
     .manu li a {
         display: block;
     }
-    #check:checked~.menu {
+    #chk:checked~.menu {
         right: 0;
     }
     .hide-btn {
@@ -337,7 +530,7 @@
         right: 20px;
         top: 10px;
     }
-    .banner {
+    #banner {
         width: 100%;
         height: 350px;
         margin-bottom: 15px;
@@ -346,28 +539,12 @@
         color: white;
         margin-top: 90px;
     }
-    .banner h2 {
+    #banner h2 {
         margin: 10px 20px;
         color: #fff;
     }
-    .circle1 {
-        width: 90px;
-        height: 90px;
-    }
-    .circle2 {
-        width: 90px;
-        height: 90px;
-    }
-    .circle3 {
-        width: 90px;
-        height: 90px;
-        display: block;
-        margin-left: 80px;
-    }
-    .circle4 {
-        width: 90px;
-        height: 90px;
-        display: inline-block;
+    #circle-container {
+        width: 100%;
     }
     #circle-container::after {
         content: '';
@@ -414,68 +591,268 @@
         color: black;
         overflow: hidden;
     }
-    #p1 {
-        background-image: url(https://imgur.com/JyMz0CR.jpg);
+    #project1 {
+        background-image: url("./1.jpg");
         background-size: cover;
         background-repeat: no-repeat;
     }
-    #p2 {
-        background-image: url(https://imgur.com/GFLWoXM.jpeg);
+    #project2 {
+        background-image: url("./2.jpeg");
         background-size: cover;
         background-repeat: no-repeat;
     }
-    #p3 {
-        background-image: url(https://imgur.com/uzmZqZA.jpg);
+    #project3 {
+        background-image: url("./3.jpg");
         background-size: cover;
         background-repeat: no-repeat;
     }
-    #grid-container {
-        width: 100%;
-        margin: 15px auto;
+    .container1 {
+        display: inline-flex;
     }
-    #grid-container::after {
-        content: '';
-        display: block;
-        clear: both;
-    }
-    .grid {
-        width: 40%;
-        float: left;
-        margin-left: 50px;
-        background-color: lightgrey;
-        border-radius: 8px;
-        margin-bottom: 20px;
-        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
-    }
-    .grid>img {
-        width: 100%;
+    .parts {
+        width: 300px;
+        height: 430px;
+        overflow: hidden;
+        border: 4px solid white;
         margin-bottom: 10px;
-    }
-    .grid>h4 {
-        margin: 0px 10px;
-        text-align: center;
-    }
-    .grid>p {
-        margin: 10px;
-        font-size: 15px;
         text-align: justify;
-        line-height: 25px;
-        color: white;
-    }
-    .grid>a {
-        display: block;
-        margin: 0 auto;
-        text-align: center;
-        color: #fff;
-        background-color: red;
-        text-decoration: none;
         padding: 10px;
-        border-radius: 8px;
+        border-radius: 10px;
+        background-color: white;
     }
-    h1 {
-        color: black;
-        font-size: 40px;
-        text-align: center;
-        padding: 25px 0px;
+    #firstpart {
+        width: 300px;
+        height: 430px;
+        border: 2px solid black;
+        margin-bottom: 10px;
+        text-align: justify;
+        padding: 10px;
+        background-color: white;
+    }
+    #secondpart {
+        width: 300px;
+        height: 430px;
+        border: 2px solid black;
+        margin-bottom: 10px;
+        text-align: justify;
+        overflow: hidden;
+        padding: 10px;
+        background-color: white;
+    }
+    #thirdpart {
+        width: 300px;
+        height: 430px;
+        border: 2px solid white;
+        margin-bottom: 10px;
+        text-align: justify;
+        overflow: hidden;
+        padding: 10px;
+        background-color: white;
+    }
+    #fourthpart {
+        width: 300px;
+        height: 430px;
+        border: 2px solid white;
+        margin-bottom: 10px;
+        text-align: justify;
+        overflow: hidden;
+        padding: 10px;
+        background-color: white;
+    }
+    .parts img {
+        width: 280px;
+        height: 150px;
+        padding: 5px;
+        border-radius: 20px;
+    }
+    .mybutton {
+        display: block;
+        margin-top: 10px;
+        text-decoration: none;
+        color: white;
+        font-family: arial;
+        background-color: red;
+        padding: 10px 40px;
+        border-radius: 10px;
+    }
+    .mybutton:hover {
+        background-color: blue;
+    }
+    /* 3. Third Break-point */
+    @media (max-width: 625px) {
+        /* Set container to min-width of 320px */
+        #container {
+            min-width: 320px;
+        }
+        .show-btn {
+            display: block;
+        }
+        .menu {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 100%;
+            background-color: #333;
+            text-align: center;
+            padding: 80px 0px;
+            line-height: normal;
+            transition: 0.7s;
+        }
+        .menu li {
+            display: block;
+        }
+        .manu li a {
+            display: block;
+        }
+        #chk:checked~.menu {
+            right: 0;
+        }
+        .hide-btn {
+            display: block;
+            position: absolute;
+            right: 20px;
+            top: 10px;
+        }
+        #banner {
+            width: 100%;
+            height: 250px;
+            margin-bottom: 15px;
+            color: white;
+            margin-top: 90px;
+        }
+        #banner h2 {
+            margin: 10px 20px;
+            color: #fff;
+            font-size: 20px;
+        }
+        #circle-container {
+            width: 90%;
+            margin-left: 10%;
+        }
+        .circle img {
+            height: 70%;
+            width: 70%;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+        #left-side {
+            width: 100%;
+            height: 200px;
+            background-color: gray;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+        #left-p>h2 {
+            text-align: left;
+            margin: 5px 5px;
+        }
+        #left-p>p {
+            font-size: 20px;
+            padding: 10px;
+            text-align: justify;
+            line-height: 28px;
+        }
+        #right-side {
+            width: 100%;
+            height: 400px;
+        }
+        .artical {
+            box-sizing: border-box;
+            height: 31%;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+            font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+            overflow: hidden;
+        }
+        #p1 {
+            background-image: url("./1.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        #p2 {
+            background-image: url("./2.jpeg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        #p3 {
+            background-image: url("./3.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .container1 {
+            display: inline-flex;
+        }
+        .parts {
+            width: 300px;
+            height: 430px;
+            overflow: hidden;
+            border: 4px solid white;
+            margin-bottom: 10px;
+            text-align: justify;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: white;
+        }
+        #firstpart {
+            width: 300px;
+            height: 430px;
+            border: 2px solid black;
+            margin-bottom: 10px;
+            text-align: justify;
+            padding: 10px;
+            background-color: white;
+        }
+        #secondpart {
+            width: 300px;
+            height: 430px;
+            border: 2px solid black;
+            margin-bottom: 10px;
+            text-align: justify;
+            overflow: hidden;
+            padding: 10px;
+            background-color: white;
+        }
+        #thirdpart {
+            width: 300px;
+            height: 430px;
+            border: 2px solid white;
+            margin-bottom: 10px;
+            text-align: justify;
+            overflow: hidden;
+            padding: 10px;
+            background-color: white;
+        }
+        #fourthpart {
+            width: 300px;
+            height: 430px;
+            border: 2px solid white;
+            margin-bottom: 10px;
+            text-align: justify;
+            overflow: hidden;
+            padding: 10px;
+            background-color: white;
+        }
+        .parts img {
+            width: 280px;
+            height: 150px;
+            padding: 5px;
+            border-radius: 20px;
+        }
+        .mybutton {
+            display: block;
+            margin-top: 10px;
+            text-decoration: none;
+            color: white;
+            font-family: arial;
+            background-color: red;
+            padding: 10px 40px;
+            border-radius: 10px;
+        }
+        .mybutton:hover {
+            background-color: blue;
+        }
     }
 }

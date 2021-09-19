@@ -1,0 +1,33 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: pink;
+}
+
+.header {
+    text-align: center;
+    color: blue;
+    background-color: wheat;
+    margin-top: 30px;
+    line-height: 50px;
+    height: 50px;
+}
+
+.content {
+    font-size: 20px;
+}
+
+.content h2 {
+    color: brown;
+}
+
+.links {
+    border: 10px solid red;
+    display: inline-flex;
+    padding: 20px;
+    font-size: 20px;
+}

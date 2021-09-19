@@ -1,0 +1,57 @@
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.brainy {
+    margin-left: 680px;
+    margin-top: 20px;
+    font-size: 20px;
+    background-color: blue;
+    width: 10%;
+    line-height: 30px;
+    text-align: center;
+}
+
+.content {
+    text-align: center;
+}
+
+.firstorange {
+    border: 10px solid orange;
+    display: inline-flex;
+    padding: 5px;
+    margin-right: 150px;
+    font-size: 20px;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.secondgreen {
+    border: 10px solid green;
+    display: inline-flex;
+    padding: 10px;
+    margin-left: 40px;
+    font-size: 20px;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.thirdyellow {
+    border: 10px solid yellow;
+    display: inline-flex;
+    padding: 10px;
+    margin-top: 90px;
+    margin-left: 190px;
+    font-size: 20px;
+    text-align: left;
+}
+
+.fourthblue {
+    border: 10px solid blue;
+    display: inline-flex;
+    padding: 5px;
+    font-size: 20px;
+    margin-left: 200px;
+    margin-right: 190px;
+    text-align: left;
+}
