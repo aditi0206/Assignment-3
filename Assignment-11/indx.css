@@ -55,11 +55,11 @@ footer {
     padding: 5px;
 }
 
-a {
+.sec-1 a {
     text-decoration: none;
 }
 
-a.hover {
+.sec-1 a:hover {
     color: orange;
 }
 
