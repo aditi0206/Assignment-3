@@ -38,8 +38,8 @@
     }
     
     tr:hover {
-        border-left: 8px solid blue;
-        background-color: rgb(192, 224, 236);
+        border-left: 8px solid rgb(16, 73, 95);
+        background-color: rgb(196, 223, 235);
     }
     
     .fa:hover {
