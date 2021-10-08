@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Plan Table</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-color: grey;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .container {
+            width: 50%;
+            height: 95vh;
+            background-color: white;
+            margin: auto;
+            margin-top: 30px;
+        }
+        
+        table {
+            border-collapse: collapse;
+            width: 95%;
+            margin: auto;
+            text-align: center;
+            border-collapse: collapse;
+            border-spacing: 0;
+            height: 600px;
+        }
+        
+        caption {
+            margin-top: 10px;
+            color: black;
+            margin-bottom: 10px;
+        }
+        
+        td,
+        th {
+            border-left: 2px solid white;
+        }
+        
+        th {
+            font-size: large;
+            padding: 10px;
+        }
+        
+        tbody tr:nth-child(odd) {
+            background-color: #E6E1E1;
+        }
+        
+        tbody tr {
+            line-height: 40px;
+        }
+        
+        .values {
+            color: green;
+            font-size: large;
+            font-weight: bolder;
+        }
+        
+        a {
+            width: 40px;
+            line-height: 65px;
+            text-decoration: none;
+            padding: 15px;
+            background-color: purple;
+            color: white;
+            border-radius: 10px;
+        }
+        
+        a:hover {
+            background-color: orange;
+        }
+        
+        .fa {
+            margin-right: 10px;
+            font-size: 30px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="container">
+        <table>
+            <caption style="font-size:20px;"><strong>SELECT YOUR PLAN</strong></caption>
+            <colgroup>
+                <col style="background-color: rgb(111, 153, 111);">
+                <col style="background-color: rgb(138, 168, 93);">
+                <col style="background-color: rgb(158, 158, 189);">
+                <col style="background-color: rgb(117, 117, 189);">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th style="font-size:30px"><i class="fa fa-building"></i>BASIC</th>
+                    <th style="font-size:30px"><i class="fa fa-superpowers"></i>PLUS</th>
+                    <th style="font-size:30px"><i class="fa fa-telegram"></i>DELUXE</th>
+                    <th style="font-size:30px"><i class="fa fa-tachometer"></i>PRO</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="values">
+                    <td>Rs. 500/-</td>
+                    <td>Rs. 1500/-</td>
+                    <td>Rs. 2500/-</td>
+                    <td>Rs. 3500/-</td>
+
+                </tr>
+
+                <tr>
+                    <td>50 pages</td>
+                    <td>75 pages</td>
+                    <td>Unlimited</td>
+                    <td>Unlimited</td>
+
+                </tr>
+
+                <tr>
+                    <td>3 users</td>
+                    <td>5 users</td>
+                    <td>10 users</td>
+                    <td>Unlimited</td>
+
+                </tr>
+
+                <tr>
+                    <td>10 Sites</td>
+                    <td>25 Sites</td>
+                    <td>100 Sites</td>
+                    <td>Unlimited</td>
+
+                </tr>
+
+                <tr>
+                    <td>50 MB</td>
+                    <td>250 MB</td>
+                    <td>1 GB</td>
+                    <td>5 GB</td>
+
+                </tr>
+
+                <tr>
+                    <td>included</td>
+                    <td>included</td>
+                    <td>included</td>
+                    <td>included</td>
+
+                </tr>
+
+                <tr>
+                    <td><i class="fa fa-check" style="color:green;font-size:25px"></i></th>
+                        <td><i class="fa fa-check" style="color:green;font-size:25px"></i></th>
+                            <td><i class="fa fa-check" style="color:green;font-size:25px"></i></th>
+                                <td><i class="fa fa-check" style="color:green;font-size:25px"></i></th>
+
+                </tr>
+
+                <tr>
+                    <td><i class="fa fa-times" style="color:red;font-size:25px"></i></th>
+                        <td><i class="fa fa-check" style="color:green;font-size:25px"></i></th>
+                            <td><i class="fa fa-check" style="color:green;font-size:25px"></i></th>
+                                <td><i class="fa fa-check" style="color:green;font-size:25px"></i></th>
+
+                </tr>
+
+                <tr>
+                    <td><i class="fa fa-times" style="color:red;font-size:25px"></i></th>
+                        <td><i class="fa fa-check" style="color:green;font-size:25px"></i></th>
+                            <td><i class="fa fa-check" style="color:green;font-size:25px"></i></th>
+                                <td><i class="fa fa-check" style="color:green;font-size:25px"></i></th>
+
+                </tr>
+
+                <tr>
+                    <td><i class="fa fa-times" style="color:red;font-size:25px"></i></th>
+                        <td><i class="fa fa-times" style="color:red;font-size:25px"></i></th>
+                            <td><i class="fa fa-check" style="color:green;font-size:25px"></i></th>
+                                <td><i class="fa fa-check" style="color:green;font-size:25px"></i></th>
+
+                </tr>
+
+                <tr>
+                    <td><i class="fa fa-times" style="color:red;font-size:25px"></i></th>
+                        <td><i class="fa fa-times" style="color:red;font-size:25px"></i></th>
+                            <td><i class="fa fa-times" style="color:red;font-size:25px"></i></th>
+                                <td><i class="fa fa-check" style="color:green;font-size:25px"></i></th>
+
+                </tr>
+
+
+                <tr>
+                    <td><a href="">Sign Up</a></td>
+                    <td><a href="">Sign Up</a></td>
+                    <td><a href="">Sign Up</a></td>
+                    <td><a href="">Sign Up</a></td>
+
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
