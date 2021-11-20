@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+        .container {
+            border: 10px solid black;
+            display: inline-block;
+            padding: 10px;
+        }
+        
+        .todo-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .todo-list {
+            list-style: none;
+            min-width: 350px;
+        }
+        
+        .todo-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            margin: 10px;
+            font-size: 24px;
+            color: black;
+        }
+        
+        .todo li {
+            flex: 1;
+            padding-left: 10px;
+        }
+        
+        .complete {
+            background-color: lightgreen;
+            color: white;
+        }
+        
+        .delete {
+            background-color: deeppink;
+            color: white;
+        }
+        
+        .fa-check,
+        .fa-trash {
+            pointer-events: none;
+        }
+        
+        .completed {
+            text-decoration: line-through;
+            opacity: .5;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="margin:30;text-align:center">FullStack to do list</h1>
+    <div class="container">
+        <form>
+            <input type="text" class="todo-input">
+            <button>
+            <i class="fa fa-plus"></i>
+        </button>
+        </form>
+        <div class="todo-container">
+            <ul class="todo-list">
+                <!-- <div>
+                <li></li>
+                <button></button>
+                <button></button>
+            </div> -->
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
